@@ -1,19 +1,76 @@
+.menu{
+}
 
-.menu li{
-    font-size: 20px;
+.menu li{ 
     padding: 20px;
     list-style-type: none;
 }
 li{
     float: left;
 }
+.toogle{
+    display: none   ;
+}
+.icon{
+        width: 35px;
+        height: 5px;
+        background-color: blue;
+        margin: 6px 0;
+      
+}
 .itens{
-    padding-left: 60%;
+    font-size: 1.2rem;
+    padding-top: 9px;
 }
+@media screen and (max-width: 1920px) {
+    .itens{
+        padding-left: 75%;
+    }
+  }
+  @media screen and (max-width: 1550px) {
+    .itens{
+        padding-left: 60%;
+    }
+  }
+  @media screen and (max-width: 798px) {
+    .itens{
+        padding-left: 50%;
+    }
+  }
+  @media screen and (max-width: 645px) {
+    .itens{
+        display: none;
+    }
+    .toogle{
+        display: block;
+    }
+    ul .name-home {
+       padding-right: 40%
+    }
+
+  }
+  @media screen and (max-width: 544px) {
+    ul .name-home {
+       padding-right: 30%
+    }
+
+  }
+  @media screen and (max-width: 474px) {
+    ul .name-home {
+       padding-right: 20%;       
+    }
+
+  }
 .itens li:hover{
-    background-color: aqua;
+    border-bottom: 1.2px solid rgb(221, 39, 39);
+    cursor: pointer;
 }
-.name-home{}
+.name-home{
+    font-size: 1.9rem;
+    padding-left: ;
+}
 *{
-    margin: 0px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
 }
