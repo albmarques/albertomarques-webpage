@@ -1,33 +1,571 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="css/style.css">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alberto Marques</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Alberto</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    body {
+      scroll-behavior: smooth;
+    }
+    header video {
+      object-fit: cover;
+      z-index: -1;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+    }
+    #top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+      z-index: 999;
+    }
+  </style>
 </head>
 <body>
-        
-        <ul class="menu">
-        
-           <a href="#"><li class="name-home">Alberto Marques </li></a>
-           <div class="itens">
-        
-           <li>Sobre</li>
-           <li>Projetos</li>
-           <li>Curriculo</li>            
-           </div>
-           <li>
-            <div class="toogle">
-                <div class="icon"></div>
-                <div class="icon"></div>
-                <div class="icon"></div>
-            </div>
-           </li>
-             
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Alberto Marques</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
-    <main>
+      </div>
+    </div>
+  </nav>
 
-    </main>
+<!-- Header -->
+<header class="vh-100 d-flex align-items-center text-white bg-dark">
+  <div class="container text-center">
+    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFHc00fOdKAMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723587546133?e=1752105600&v=beta&t=LpoQs1tFaRPvUvnO4JMGlawm7pnOhsT_F8Ze5KXK8n0" alt="Foto de Alberto" class="rounded-circle mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 3px solid #0d6efd;">
+    <h1 class="display-4 fw-bold">Olá, eu sou <span class="text-primary">Alberto</span></h1>
+    <p class="lead fs-4">Desenvolvedor Full Stack & Criador de Soluções Digitais</p>
+    <a href="#projetos" class="btn btn-primary btn-lg mt-3">Veja Meu Trabalho</a>
+  </div>
+</header>
+
+  
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Sobre Mim</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card h-100 text-center shadow-sm" style="border: none;">
+            <div class="card-body">
+              <i class="bi bi-code fs-1 mb-3" style="color: inherit;"></i>
+              <h5 class="card-title">Desenvolvedor</h5>
+              <p class="card-text">Crio aplicações web responsivas e performáticas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card h-100 text-center shadow-sm" style="border: none;">
+            <div class="card-body">
+              <i class="bi bi-laptop fs-1 mb-3" style="color: inherit;"></i>
+              <h5 class="card-title">Mobile & IoT</h5>
+              <p class="card-text">Experiência com React Native e integrações com dispositivos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card h-100 text-center shadow-sm" style="border: none;">
+            <div class="card-body">
+              <i class="bi bi-person-lines-fill fs-1 mb-3" style="color: inherit;"></i>
+              <h5 class="card-title">Comunicador</h5>
+              <p class="card-text">Comunicação clara e colaboração em equipe com empatia.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+ <!-- Habilidades -->
+<section id="habilidades" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Minhas Habilidades</h2>
+      <div class="row g-4">
+        <div class="col-md-3 text-center" data-aos="flip-left">
+          <i class="bi bi-braces fs-1 text-primary mb-2"></i>
+          <h5>Java & Spring</h5>
+          <p class="text-muted">Desenvolvimento backend com APIs REST, validações e testes.</p>
+        </div>
+        <div class="col-md-3 text-center" data-aos="flip-left" data-aos-delay="100">
+          <i class="bi bi-window-stack fs-1 text-primary mb-2"></i>
+          <h5>React & React Native</h5>
+          <p class="text-muted">Interfaces modernas para web e mobile com foco em performance.</p>
+        </div>
+        <div class="col-md-3 text-center" data-aos="flip-left" data-aos-delay="200">
+          <i class="bi bi-hdd-network fs-1 text-primary mb-2"></i>
+          <h5>Node.js & APIs</h5>
+          <p class="text-muted">Serviços escaláveis com Express, autenticação e banco de dados.</p>
+        </div>
+        <div class="col-md-3 text-center" data-aos="flip-left" data-aos-delay="300">
+          <i class="bi bi-git fs-1 text-primary mb-2"></i>
+          <h5>Versionamento</h5>
+          <p class="text-muted">Git, GitHub e GitLab para controle de código e colaboração.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Línguas -->
+<section id="languages" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+      <h2 class="text-center mb-4">Idiomas</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-3 col-6 text-center mb-4">
+          <span class="flag-icon flag-icon-us fa-3x mb-2" style="font-size: 3rem;"></span>
+          <h5>Inglês</h5>
+          <p>Intermediário</p>
+        </div>
+        <div class="col-md-3 col-6 text-center mb-4">
+          <span class="flag-icon flag-icon-es fa-3x mb-2" style="font-size: 3rem;"></span>
+          <h5>Espanhol</h5>
+          <p>Básico</p>
+        </div>
+        <div class="col-md-3 col-6 text-center mb-4">
+          <span class="flag-icon flag-icon-sign-language fa-3x mb-2" style="font-size: 3rem;"></span>
+          <h5>LIBRAS</h5>
+          <p>Intermediário</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Formação Acadêmica e Cursos -->
+<section id="formacao" class="py-5 bg-light">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-5">Formação Acadêmica</h2>
+    
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-3 bg-white shadow-sm rounded">
+          <h5>Curso superior em Desenvolvimento de Software Multiplataforma</h5>
+          <p class="mb-1">FATEC Zona Leste</p>
+          <p class="text-muted">Conclusão prevista: 2026</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-3 bg-white shadow-sm rounded">
+          <h5>Técnico em Informática</h5>
+          <p class="mb-1">ETEC Adolpho Berezin</p>
+          <p class="text-muted">Concluído em 2018</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="text-center mt-5 mb-4">Cursos Complementares</h3>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Desenvolvimento Full Stack Java</h5>
+            <p class="card-text">Digital Innovation One - 80h<br><small class="text-muted">Concluído em 2024</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">React JS Essencial</h5>
+            <p class="card-text">Origamid - 40h<br><small class="text-muted">Concluído em 2023</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Git e GitHub na Prática</h5>
+            <p class="card-text">Alura - 20h<br><small class="text-muted">Concluído em 2023</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="py-5 bg-white">
+  <div class="container">
+    <h2 class="text-center mb-5">Projetos em Destaque</h2>
+
+    <!-- CATEGORIA: Sites Institucionais -->
+    <h3 class="text-center mb-4">
+      <i class="bi bi-globe-americas me-2"></i>Sites Institucionais
+    </h3>
+    <div class="row justify-content-center g-4 mb-5">
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://source.unsplash.com/400x200/?fishing,community" class="card-img-top" alt="Site APPA">
+          <div class="card-body">
+            <h5 class="card-title text-center">Site APPA</h5>
+            <p class="card-text">Site institucional da Associação de Pequenos Pescadores de Assis, feito em HTML e CSS com foco em acessibilidade e identidade visual personalizada.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAppa">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: Ferramentas Web -->
+    <h3 class="text-center mb-4">
+      <i class="bi bi-tools me-2"></i>Ferramentas Web
+    </h3>
+    <div class="row justify-content-center g-4 mb-5">
+      <!-- Synonym Generator -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://source.unsplash.com/400x200/?language,ai" class="card-img-top" alt="Synonym Generator GPT">
+          <div class="card-body">
+            <h5 class="card-title text-center">SynonymGeneratorGPT</h5>
+            <p class="card-text">Ferramenta que usa a API da OpenAI para gerar sinônimos em tempo real, auxiliando na escrita e produtividade.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalSynonym">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Agenda de Contatos -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://source.unsplash.com/400x200/?contacts,bootstrap" class="card-img-top" alt="Agenda de Contatos">
+          <div class="card-body">
+            <h5 class="card-title text-center">Agenda de Contatos</h5>
+            <p class="card-text">Aplicação com Node.js, Firebase e Bootstrap. Permite gerenciar contatos com layout responsivo e integração Handlebars.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalAgenda">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: Sistemas Web Avançados -->
+    <h3 class="text-center mb-4">
+      <i class="bi bi-diagram-3 me-2"></i>Sistemas Web Avançados
+    </h3>
+    <div class="row justify-content-center g-4 mb-5">
+      <!-- Kepos -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://source.unsplash.com/400x200/?greenhouse,iot" class="card-img-top" alt="Projeto Kepôs">
+          <div class="card-body">
+            <h5 class="card-title text-center">Kepôs - Estufa Inteligente</h5>
+            <p class="card-text">Sistema IoT com React JS e Spring Boot para gerenciamento de estufas. Desenvolvi telas de login, cadastro e sincronização de dispositivos.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalKepos">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- NodeBounty Web -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://source.unsplash.com/400x200/?fintech,finance" class="card-img-top" alt="NodeBounty Web">
+          <div class="card-body">
+            <h5 class="card-title text-center">NodeBounty (Web)</h5>
+            <p class="card-text">Fintech com React e backend Java Spring. Desenvolvi a geração de cartões (Luhn), extrato, transferências e saques.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNodeBountyWeb">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORIA: Aplicativos Mobile -->
+    <h3 class="text-center mb-4">
+      <i class="bi bi-phone me-2"></i>Aplicativos Mobile
+    </h3>
+    <div class="row justify-content-center g-4">
+      <!-- NodeBounty Mobile -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://m.media-amazon.com/images/G/01/primevideo/seo/primevideo-seo-logo.png" class="card-img-top" alt="NodeBounty Mobile">
+          <div class="card-body">
+            <h5 class="card-title text-center">NodeBounty (Mobile)</h5>
+            <p class="card-text">Versão mobile do NodeBounty com todas as funcionalidades da versão web e interface adaptada para dispositivos móveis.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalNodeBountyMobile">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- MarketDeal -->
+      <div class="col-md-6 col-lg-4 d-flex">
+        <div class="card shadow-sm h-100 w-100">
+          <img src="https://raw.githubusercontent.com/DarkMetaK/marketdeal/main/public/preview.png" class="card-img-top" alt="MarketDeal">
+          <div class="card-body">
+            <h5 class="card-title text-center">MarketDeal</h5>
+            <p class="card-text">App social para ofertas, feito em Kotlin com Firebase. Suporte a fotos, controle de acesso e dados em tempo real.</p>
+            <div class="text-center">
+              <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#modalMarketDeal">Ver Detalhes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  
+  <script>
+    let currentIndex = 0;
+    const projetosRow = document.getElementById("projetos-row");
+    const projetos = Array.from(projetosRow.children);
+    const prevBtn = document.getElementById("prev-btn");
+    const nextBtn = document.getElementById("next-btn");
+  
+    const updateProjects = () => {
+      projetosRow.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+  
+    const showNextProject = () => {
+      currentIndex = (currentIndex + 1) % projetos.length;
+      updateProjects();
+    };
+  
+    const showPrevProject = () => {
+      currentIndex = (currentIndex - 1 + projetos.length) % projetos.length;
+      updateProjects();
+    };
+  
+    nextBtn.addEventListener("click", showNextProject);
+    prevBtn.addEventListener("click", showPrevProject);
+  </script>
+  
+  
+<!-- Modais dos Projetos -->
+
+<!-- Modal Site APPA -->
+<div class="modal fade" id="modalAppa" tabindex="-1" aria-labelledby="labelAppa" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelAppa">🌊 Site APPA</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Criar presença digital para a Associação de Pequenos Pescadores de Assis.</p>
+        <p><strong>Descrição:</strong> Site institucional feito com HTML5 e CSS3, com foco em acessibilidade, identidade visual e navegação simples para pessoas de todas as idades. A proposta buscou aproximar a comunidade local da internet com uma interface amigável, recursos visuais temáticos e estrutura de conteúdo otimizada para buscadores.</p>
+        <ul>
+          <li>Layout adaptado para dispositivos móveis</li>
+          <li>Tipografia de fácil leitura</li>
+          <li>Cores inspiradas no ambiente natural</li>
+          <li>Menu âncora e rodapé com informações de contato</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> HTML, CSS, Figma</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Synonym Generator -->
+<div class="modal fade" id="modalSynonym" tabindex="-1" aria-labelledby="labelSynonym" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelSynonym">🔄 SynonymGeneratorGPT</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Auxiliar escritores e profissionais na busca de sinônimos adequados.</p>
+        <p><strong>Descrição:</strong> Interface que consome a API da OpenAI para fornecer sinônimos contextualizados em tempo real. O sistema permite sugestões inteligentes de palavras com base no nível de formalidade e no contexto da frase digitada.</p>
+        <ul>
+          <li>Respostas instantâneas</li>
+          <li>Busca por contexto e nível de linguagem</li>
+          <li>Interface simples e responsiva</li>
+          <li>Compatível com dispositivos móveis</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> HTML, JS, Bootstrap, API OpenAI</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Agenda de Contatos -->
+<div class="modal fade" id="modalAgenda" tabindex="-1" aria-labelledby="labelAgenda" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelAgenda">📒 Agenda de Contatos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Gerenciar contatos pessoais e profissionais.</p>
+        <p><strong>Descrição:</strong> Ferramenta full-stack com cadastro, edição e exclusão de contatos. Visual limpo com Handlebars e armazenamento em tempo real no Firebase. A aplicação foi construída para ser simples, funcional e didática, ideal para estudos de integração front-back-end.</p>
+        <ul>
+          <li>Firebase Realtime Database</li>
+          <li>Integração com Bootstrap</li>
+          <li>CRUD completo</li>
+          <li>Design intuitivo</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> Node.js, Firebase, Handlebars</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Kepos -->
+<div class="modal fade" id="modalKepos" tabindex="-1" aria-labelledby="labelKepos" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelKepos">🌱 Kepôs - Estufa Inteligente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Automatizar estufas com sensores conectados.</p>
+        <p><strong>Descrição:</strong> Sistema que integra sensores MQTT com backend em Spring Boot e visualização via React. O projeto visa controle climático automatizado, promovendo sustentabilidade e monitoramento em tempo real via dashboard intuitiva.</p>
+        <ul>
+          <li>Cadastro e login de usuários</li>
+          <li>Sincronização de sensores IoT</li>
+          <li>Visualização gráfica de dados</li>
+          <li>Alertas personalizados</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> Spring Boot, React.js, MQTT</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal NodeBounty Web -->
+<div class="modal fade" id="modalNodeBountyWeb" tabindex="-1" aria-labelledby="labelNBW" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelNBW">💳 NodeBounty (Web)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Criar uma fintech de simulação bancária.</p>
+        <p><strong>Descrição:</strong> Interface web com operações de conta, geração de cartões Luhn, transferências e histórico bancário. A plataforma simula um ambiente bancário real, ideal para testes de UI/UX e lógica de back-end em Java.</p>
+        <ul>
+          <li>Login, extrato e saldo</li>
+          <li>Geração e validação de cartões</li>
+          <li>Responsivo e seguro</li>
+          <li>Componentização com React</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> Spring Boot, React.js, Bootstrap</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal NodeBounty Mobile -->
+<div class="modal fade" id="modalNodeBountyMobile" tabindex="-1" aria-labelledby="labelNBM" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelNBM">📱 NodeBounty (Mobile)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Acessar a fintech NodeBounty via celular.</p>
+        <p><strong>Descrição:</strong> Aplicativo com as mesmas funcionalidades da versão web, otimizado para smartphones. Projeto foca em acessibilidade, velocidade e boas práticas de navegação mobile-first.</p>
+        <ul>
+          <li>Design Mobile First</li>
+          <li>Consumo de APIs REST</li>
+          <li>Componentes reutilizáveis</li>
+          <li>Compatível com Android e iOS</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> React Native, Spring Boot</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal MarketDeal -->
+<div class="modal fade" id="modalMarketDeal" tabindex="-1" aria-labelledby="labelMarket" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="labelMarket">🛍️ MarketDeal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>Objetivo:</strong> Facilitar o compartilhamento de ofertas e comparação de preços entre consumidores.</p>
+        <p><strong>Descrição:</strong> O MarketDeal é uma rede social para economia colaborativa, onde usuários podem cadastrar, editar e remover ofertas de produtos em mercados locais. A plataforma permite upload de fotos, exibe os mercados e produtos cadastrados e diferencia perfis comuns de administradores. Desenvolvido em Kotlin e integrado com Firebase, o app proporciona atualizações em tempo real e uma navegação fluida com design responsivo.</p>
+        <ul>
+          <li>Cadastro, edição e exclusão de ofertas</li>
+          <li>Listagem de produtos por mercado</li>
+          <li>Upload de fotos para produtos e mercados</li>
+          <li>Controle de acesso com perfil administrador</li>
+          <li>Layout responsivo e atualizações em tempo real</li>
+        </ul>
+        <p><strong>Tecnologias:</strong> Kotlin, Firebase, Material Design</p>
+        <p><a href="#" class="text-decoration-none"><i class="bi bi-github"></i> Ver código no GitHub</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">© 2025 Alberto. Todos os direitos reservados.</p>
+      <a href="https://github.com/seuusuario" target="_blank" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+      <a href="https://linkedin.com/in/seuusuario" target="_blank" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="top-btn" class="btn btn-primary rounded-circle"><i class="bi bi-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const topBtn = document.getElementById('top-btn');
+    window.addEventListener('scroll', () => {
+      topBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    const toggle = document.getElementById('toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('bg-dark');
+      document.body.classList.toggle('text-white');
+    });
+  </script>
 </body>
 </html>
